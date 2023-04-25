@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: storage stack as exercises
+
+Resources:
+  database:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      DBName: base-de-donnees-test
+      Engine: postgres
+      BDInstanceClass:
+      AllocatedStorage:
+      MasterUserName:
+      MasterUserPassword:
